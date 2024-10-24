@@ -21,7 +21,7 @@ pub struct Mapping {
     pub local_ip: Ipv4Addr,
     /// Local port used to create this mapping.
     pub local_port: NonZeroU16,
-    /// Gateway address used to registered this mapping.
+    /// Gateway address used to register this mapping.
     pub gateway: Ipv4Addr,
     /// External port of the mapping.
     pub external_port: NonZeroU16,
@@ -35,7 +35,7 @@ pub struct Mapping {
 }
 
 impl Mapping {
-    /// Attempt to registered a new mapping with the PCP server on the provided gateway.
+    /// Attempt to register a new mapping with the PCP server on the provided gateway.
     pub async fn new(
         local_ip: Ipv4Addr,
         local_port: NonZeroU16,
